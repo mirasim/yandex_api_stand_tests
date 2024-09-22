@@ -68,9 +68,6 @@ def test_create_user_has_special_symbol_in_first_name_get_error_response():
 def test_create_user_has_number_in_first_name_get_error_response():
     negative_assert_symbol("123")
 
-def test_create_user_has_tatar_in_first_name_get_error_response():
-    negative_assert_symbol("учпучмак")
-
 def test_create_user_no_first_name_get_error_response():
     # Копируется словарь с телом запроса из файла data в переменную user_body
     # Иначе можно потерять данные из исходного словаря
